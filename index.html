@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <img src="assets/img/steuererkl-rung-was-tun-wenn-die-nebenkostenabrechnung-zu-sp-t-kommt.jpeg" alt="a">
+        <ul>
+            <li><a href="">Steuererklärung</a></li>
+            <li><a href="">Einkommenssteuer</a></li>
+            <li><a href="">Coronahilfe</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<section>
+  <p>Dies ist ein Program zur Darstellung der Tarifhistorie</p>
+<p>zu versteuerndes Einkommen (zvE):</p>  
+
+<p>Persönliche Verhältnisse:</p> 
+<div id="checkbox">
+    <input type="radio" name="status" id="single" checked onclick="showZVE2()">
+    <label for="">single</label>
+    <input type="radio" name="status" id="married" onclick="showZVE2()">
+    <label for="">married</label>
+</div>
+
+<div>
+<input type="number" name="" id="zvE1" placeholder="zVE1 Euro">
+<input type="number" name="" id="zvE2" placeholder="zVE2 Euro">
+
+</div>
+
+<br>
+
+<div>
+    <select id="year" name="">
+        <option value="0">berechnungsjahr</option>
+
+        <option value="year20">2019</option>
+        <option value="year19">2018</option>
+        <option value="year18">2017</option>
+      </select>
+</div>
+<br>
+
+<h2>Alle Werte in Euro</h2>
+<h2 id="result"></h2>
+
+        <input type="button" value="Berechnen" onclick="berechne()" id="button">
+
+
+</section>
+
+    
+    
+
+
+
+
+<script src="assets/js/main.js"></script>    
+</body>
+</html>
